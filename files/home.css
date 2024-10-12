@@ -1,0 +1,54 @@
+<style>
+
+		
+		.bod{
+		background-image: url('images/back.jpg');
+		background-size: cover;
+		}
+		.logo{
+		float: right;
+		margin-left: 1300px;
+		position: absolute;
+		z-index:50;
+		}
+		.desc{
+		text-align:justify;
+        background-color: rgba(255, 255, 255, 0.8);
+		padding: 10px;
+        font-family: 'Courier New', Courier, monospace;
+		font-weight:bold;
+        border-radius: 20px;
+		font-size:20px;
+		border: 20px;
+		margin: 30px;
+		}
+		img{
+            display: block;
+            margin: 0 auto;
+			border: 3px;
+			border-color: green;
+			}
+		
+		body h1{
+		font-family: 'Impact', sans-serif;	
+		text-align:center;
+		}
+		
+		 footer {
+		text-align: center;
+		background-color: #f9cab6;
+		color: green;
+        font-family: 'Courier New', Courier, monospace;
+		font-weight:bold;
+		overflow: auto;
+		}
+		header{
+            text-align: center;
+			background-color: #f9cab6
+;
+			color: green;
+			overflow:auto;
+		
+		}			
+
+</style>
