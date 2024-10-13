@@ -3,6 +3,7 @@
 		.bod{
 		background-image: url('../images/back.jpg');
 		background-size: cover;
+		background-color: #c4e9c8;
 		}
 		.logo{
 		float: right;
