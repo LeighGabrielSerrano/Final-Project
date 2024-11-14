@@ -53,8 +53,18 @@
 			border-color: green;
 			display: flex;
 			
+			
         }
-		
+		.gallery-item:hover{
+		background-color: #f9cab6;
+			}
+		.text:hover{
+		background-color: #f9cab6;
+		font-size:35px;
+			}
+		.name:hover{
+		background-color: white;
+			}
         .gallery img {
             border: solid green;
 			background-color: white;
@@ -133,6 +143,9 @@
 		float: center;
 		display: block;
 		}
+		.text:visited {
+		color: pink;
+		}
 
     </style>
 </head>
@@ -176,23 +189,23 @@
     <div class="gallery">
 	        <div class="gallery-item">
          <a href="files/meaning.html"><img src="images/apple.png" alt="Image 1"></a>
-			<p>Meaning</p>
+			<p class ="text"><a href="files/meaning.html">Meaning</p></a>
 			</div>
 			<div class="gallery-item">
          <a href="files/importance.html"><img src="images/bear.jfif" alt="Image 2"></a>
-			<p>Importance</p>
+			<p class ="text"><a href="files/importance.html">Importance</p></a>
 			</div>
 			<div class="gallery-item">
          <a href="https://caro.doh.gov.ph/infectious-diseases/"><img src="images/docs.jpg" alt="Image 3"></a>
-			<p>Common Sickness</p>
+			<p class ="text"><a href="https://caro.doh.gov.ph/infectious-diseases/">Common Sickness</p></a>
 			</div>
 			<div class="gallery-item">
          <a href="files/habits.html"><img src="images/doctors.jpg" alt="Image 4"></a>
-			<p>Habits</p>
+			<p class ="text"><a href="files/habits.html">Habits</p></a>
 			</div>
 			<div class="gallery-item">
-         <a href="files/sources.html"><p>Sources</p></a>
-			
+         <a href="files/sources.html"><img src="images/health.png" alt="Image 4"></a>
+			<p class ="text"><a href="files/sources.html">Sources</p></a>
 			</div>
 			
 	</div>
@@ -201,9 +214,9 @@
 
 <h3> TIP: click the logo to return to homepage.</h3>
 <footer>
-  <p>Page by: Leigh Gabriel R. Serrano</p>
-  <a href="mailto:leighgabriel.serrano@smc.pshs.edu.ph">leighgabriel.serrano@smc.pshs.edu.ph</a></p>
-  <a href="files/sources.html"> SOURCES</a>
+  <p class="name">Page by: Leigh Gabriel R. Serrano</p>
+  <p class="name"><a href="mailto:leighgabriel.serrano@smc.pshs.edu.ph">leighgabriel.serrano@smc.pshs.edu.ph</a></p>
+  <p class="name"><a href="files/sources.html"> SOURCES</a></p>
 </footer>
 </body>
 </html>
