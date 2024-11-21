@@ -18,7 +18,7 @@
 			background-color: #f9cab6;
 			}
 
-        header {
+        .header {
             position: relative;
             width: 100%;
             height: 500px;
@@ -26,7 +26,6 @@
             background-size: cover;
             background-position: center;
         }
-		
         .about {
             position: absolute;
             top: 50%;
@@ -39,13 +38,12 @@
             font-family: 'Courier New', Courier, monospace;
 			font-weight: bold;
 			font-size:20px;
+
         }
-		
 		.abt{
 		font-family: 'Impact', sans-serif;	
 		text-align: center;		
 		}
-		
         .gallery {
             display: flex;
             margin: 25px;
@@ -54,29 +52,27 @@
             flex-wrap: wrap;
 			border-color: green;
 			display: flex;
+			
+			
         }
-		
-		.gallery-item:active{
+		.gallery-item:hover{
 		background-color: #f9cab6;
 			}
-			
-		.text:hover {
+		.text:hover{
 		background-color: #f9cab6;
 		font-size:35px;
 			}
-			
 		.name:hover{
 		background-color: white;
 			}
-			
         .gallery img {
             border: solid green;
 			background-color: white;
 			margin: 10px;
             width: 360px;
-            height: 300px;	
+            height: 300px;
+			
         }
-		
 		.icon-bar {
 		width: 100%;
 		background-color: #f9cab6;
@@ -99,6 +95,7 @@
 
 		.active {
 		background-color: white;
+;
 		}
 
 		.logo{
@@ -106,8 +103,18 @@
 		margin-left: 1295px;
 		position: fixed;
 		z-index:50;
+		tansform: scale (3) rotate (360deg)
 		}
+		.logo img{
+		 transition: all 0.3s;
+		box-sizing: border-box;
+  }
+		.logo:hover img{
+				  transform: scale(1.3) rotate(360deg);
+
 		
+			}
+			
 		.gallery-item {
 			border-color: green;
             text-align: center;
@@ -116,26 +123,24 @@
 			font-size: 30px;
 			flex: 33.33%;
 			padding: 5px;
+
 		}
-		
 		.gallery-item p{
 		border-top: 10px;
-		margin-top: 10px;
-		}
-		
+		margin-top: 10px;}
 		.h{
             font-family: 'Courier New', Courier, monospace;
 			float: center;
 			padding-bottom: 50px;
 			padding-left: 50px;
+
 		}
-		
 		h1{
 		text-align: center;
         font-family: 'Courier New', Courier, monospace;
 		padding-top:25px';
-		}
 		
+		}
 		footer {
 		text-align: center;
 		padding: 3px;
@@ -144,14 +149,9 @@
         font-family: 'Courier New', Courier, monospace;
 		font-weight:bold;
 		}
-		
 		h3{
 		float: center;
 		display: block;
-		}
-		
-		.text:visited {
-		color: pink;
 		}
 		
 
@@ -171,30 +171,30 @@
 
 	</div>
 
-    <header> 
-			<div class="about">
-				<h1 class= "abt">About this page!</h1>
-					<article>
-					This page aims to spread awareness towards the arising health problems around the country. 
-					There are currently ongoing health problems that are left unaided which is why
-					learning them and their symptoms is a necessity, especially for the youth.
-					Among the numerous modern health issues existing, the three that causes most deaths among Filipinos is the following; 
-					Ischaemic Heart Disease, Neoplasms or Cancer, and Cerebrovasular Diseases. All three have one thing in common, 
-					its causes consists of drinking, smoking and high cholesterol.
-					</article>
-			</div>
-	</header>
 
-			
+    <div class="header">		
 		
+        <div class="about">
+            <h1 class= "abt">About this page!</h1>
+            <p>This page aims to spread awareness towards the arising health problems around the country. 
+				There are currently ongoing health problems that are left unaided which is why
+			learning them and their symptoms is a necessity, especially for the youth.
+			Among the numerous modern health issues existing, the three that causes most deaths among Filipinos is the following; 
+			Ischaemic Heart Disease, Neoplasms or Cancer, and Cerebrovasular Diseases. All three have one thing in common, 
+			its causes consists of drinking, smoking and high cholesterol.</p>
+
+</p> 
+
+        </div>
+		
+    </div>
 			
 
 <p>
-			<section class="h">
-				<h1> Click on the Images below to learn more! </h1>
-			</section>
+<div class="h"><h1> Click on the Images below to learn more! </h1>
+</div>
 
-    <nav class="gallery">
+    <div class="gallery">
 	        <div class="gallery-item">
          <a href="files/meaning.html"><img src="images/apple.png" alt="Image 1"></a>
 			<p class ="text"><a href="files/meaning.html">Meaning</p></a>
@@ -216,7 +216,7 @@
 			<p class ="text"><a href="files/sources.html">Sources</p></a>
 			</div>
 			
-	</nav>
+	</div>
 </p>
 
 
