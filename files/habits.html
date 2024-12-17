@@ -4,8 +4,10 @@
 <head>
 <style>
     body{
-		background-image: url('../images/back.jpg');
-		margin:0px;
+		border: 5px dashed green;
+		background: url(../images/back.jpg);
+		background-repeat: repeat;
+		background-origin: padding-box;
 		float: center;
 		}
 	footer {
@@ -28,30 +30,43 @@
 		.vid{
 		text-align: center;
 		}
-
+		.quote{
+		text-align: center;
+		font-style:italic;
+		}
+		p:last-child {
+		background-color: #f9cab6;
+		}
+		
 </style>
 
 <title> HABITS</title>
 </head>
 <body class="bod">
-	<div class="logo"> 
-		<a href="../index.html"><img src="../images/file.png" width="130px" height="130px"> </a>
-	</div>
+		<div class="icon-bar">
+		<div class="logo"> 
+		<a href="index.html"><img src="../images/file.png" width="130px" height="130px"> </a>
+		</div>
 	
 	<header>
 		<h1> H A B I T S</h1>
-		</header>
-	
-	<div class="vid">
-        <video controls autoplay muted playsinline class="video" id="myVideo">
-            <source src="../images/habits.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
-	
+	</header>
+		<main>	
+			<div class="desc">
+			<p class="quote">"Healthy habits are learned through practice."</p>
+			Healthcare is a must. To take care of one's self is necessary. Learn more about what to do or what habits to develop for health improvement.
+			Watch the video to learn how to improve habits for our health
+			</div>
+			
+			<div class="vid">
+				<video controls autoplay muted playsinline class="video" id="myVideo">
+					<source src="../images/habits.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+			</div>
+		</main>	
 		
-		<p class="desc">Healthcare is a must. To take care of one's self is necessary. Learn more about what to do or what habits to develop for health improvement.
-		Watch the video to learn how to improve habits for our health</p>
+		
 
 
 <footer>
