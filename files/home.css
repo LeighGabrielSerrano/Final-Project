@@ -1,15 +1,22 @@
+<style>
 
 		
 		.bod{
-		background-image: url('../images/back.jpg');
+		background-image: url('images/back.jpg');
 		background-size: cover;
-		background-color: #c4e9c8;
 		}
 		.logo{
 		float: right;
-		margin-left: 1300px;
+		margin-left: 1295px;
 		position: absolute;
 		z-index:50;
+		}
+		.logo img{
+		 transition: all 0.3s;
+		box-sizing: border-box;
+		}
+		.logo:hover img{
+		transform: scale(1) rotate(360deg);
 		}
 		.desc{
 		text-align:justify;
@@ -19,8 +26,28 @@
 		font-weight:bold;
         border-radius: 20px;
 		font-size:20px;
-		border: 20px;
 		margin: 30px;
+		border: 1px; border-radius: 1px;
+		}
+		.cont{
+		display: flex
+		justify-content: center;
+		text-align: center;
+		align-items: center;
+		float:center;
+		}
+			
+		summary{
+		text-align:justify;
+        background-color: rgba(255, 255, 255, 0.8);
+		padding: 10px;
+        font-family: 'Courier New', Courier, monospace;
+		font-weight:bold;
+        border-radius: 20px;
+		font-size:20px;
+		margin: 30px;
+		margin-left: 50px;
+		border: 1px; border-radius: 1px;
 		}
 		img{
             display: block;
@@ -51,3 +78,4 @@
 		
 		}			
 
+</style>
