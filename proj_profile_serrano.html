@@ -9,24 +9,24 @@
 <body class="bod">
   <div class="container">
 	<header>
-	  <h1>Welcome, <span id="profileName"></span>!</h1>
+	  <h1>Welcome, <span id="prof"></span>!</h1>
 	  <p style="text-align: center;">Thank you for supporting our campaign.</p>
 	  
 	</header>
 	<section>
-	  <p><strong>Email:</strong> <span id="profileEmail"></span></p>
-	  <p><strong>Sex:</strong> <span id="profileSex"></span></p>
-	  <p><strong>Why I support this campaign:</strong> <span id="profileReason"></span></p>
+	  <p>Email:<span id="email"></span></p>
+	  <p>Sex:<span id="gender"></span></p>
+	  <p>Why I support this campaign: <span id="reason"></span></p>
 		<a href="index.html">
 		<br><button id="learn">Continue to website</button>
 		</a>
 		</section>		
   </div>
   <script>
-  document.getElementById('profileName').innerText = localStorage.getItem('first') + " " + localStorage.getItem('last');
-  document.getElementById('profileEmail').innerText = localStorage.getItem('email');
-  document.getElementById('profileSex').innerText = localStorage.getItem('sex');
-  document.getElementById('profileReason').innerText = localStorage.getItem('reason');
+  document.getElementById('prof').innerText = localStorage.getItem('first') + " " + localStorage.getItem('last');
+  document.getElementById('email').innerText = localStorage.getItem('email');
+  document.getElementById('gender').innerText = localStorage.getItem('sex');
+  document.getElementById('reason').innerText = localStorage.getItem('reason');
   </script>
   
 
