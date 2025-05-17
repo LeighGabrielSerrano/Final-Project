@@ -47,6 +47,6 @@ document.getElementById("signUp").addEventListener("submit", function(event) {
     localStorage.setItem("email", email.value);
     localStorage.setItem("sex", sex.value);
     localStorage.setItem("reason", reason.value);
-    window.location.href = "profpage.html";
+    window.location.href = "proj_profile_serrano.html";
   }
 });
