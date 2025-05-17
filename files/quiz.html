@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SDG 3 Quiz</title>
+    <link rel="stylesheet" href="quiz.css" />
+    <style>
+      .hidden { display: none; }
+      .correct { background-color: green; color: white; }
+      .wrong { background-color: red; color: white; }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome!</h1>
+    <p>
+      This is a quiz about the third SDG, Good Health and Well-Being.<br />
+      Answer to see how knowledgeable you are about this topic.
+    </p>
+    <div class="container">
+      <div class="box">
+        <div id="preview">
+          <div class="des">Here are 5 questions.</div><hr>
+          <button id="proceed">Take Quiz Now!</button>
+        </div>
+        <div id="quiz" class="hidden">
+          <div id="questioncont"></div> <hr>
+		  <div class="nextcont">
+			<button id="nextBtn" class="hidden">Next</button>
+		  </div>
+        </div>
+        <div id="result" class="hidden">
+          <h2>Your Score: <span id="score"></span></h2>
+			<a href="../index.html">
+			<button id="learn">Learn</button>
+			</a>
+          <button id="again" class="again">Try Again</button>
+        </div>
+      </div>
+    </div>
+      <script src="script.js"></script>
+  </body>
+</html>
