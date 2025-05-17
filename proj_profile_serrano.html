@@ -1,39 +1,34 @@
-	<!DOCTYPE html>
-	<html lang="en">
-	<head>
-	  <meta charset="UTF-8">
-	  <title>Your Profile</title>
-	  <link rel="stylesheet" href="files/sign.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your Profile</title>
+  <link rel="stylesheet" href="files/sign.css">
 
-	</head>
-	<body class="bod">
-	  <div class="container">
-		<header>
-		  <h1>Welcome, <span id="profileName"></span>!</h1>
-		  <p style="text-align: center;">Thank you for supporting our campaign.</p>
-		  
-		</header>
-
-		<section>
-		  <p><strong>Email:</strong> <span id="profileEmail"></span></p>
-		  <p><strong>Sex:</strong> <span id="profileSex"></span></p>
-		  <p><strong>Why I support this campaign:</strong> <span id="profileReason"></span></p>
-			<a href="index.html">
-			<br><button id="learn">Continue to website</button>
-			</a>
-			</section>
-		
-		
-	  </div>
+</head>
+<body class="bod">
+  <div class="container">
+	<header>
+	  <h1>Welcome, <span id="profileName"></span>!</h1>
+	  <p style="text-align: center;">Thank you for supporting our campaign.</p>
 	  
+	</header>
+	<section>
+	  <p><strong>Email:</strong> <span id="profileEmail"></span></p>
+	  <p><strong>Sex:</strong> <span id="profileSex"></span></p>
+	  <p><strong>Why I support this campaign:</strong> <span id="profileReason"></span></p>
+		<a href="index.html">
+		<br><button id="learn">Continue to website</button>
+		</a>
+		</section>		
+  </div>
+  <script>
+  document.getElementById('profileName').innerText = localStorage.getItem('first') + " " + localStorage.getItem('last');
+  document.getElementById('profileEmail').innerText = localStorage.getItem('email');
+  document.getElementById('profileSex').innerText = localStorage.getItem('sex');
+  document.getElementById('profileReason').innerText = localStorage.getItem('reason');
+  </script>
+  
 
-	  <script>
-	  document.getElementById('profileName').innerText = localStorage.getItem('first') + " " + localStorage.getItem('last');
-	  document.getElementById('profileEmail').innerText = localStorage.getItem('email');
-	  document.getElementById('profileSex').innerText = localStorage.getItem('sex');
-	  document.getElementById('profileReason').innerText = localStorage.getItem('reason');
-	  </script>
-	  
-
-	</body>
-	</html>
+</body>
+</html>
